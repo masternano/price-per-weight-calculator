@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CALCULATOR X CONVERTER
+    </title>
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta name="description" content="CALCULATOR">
+    <meta name="keywords" content="calculator,farm,converter, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="review-item">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="review-pic">
+                        <img src="img/Cow.jpg" alt="cow" class="cow">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="review-content text-box text-white">
+                        <h3>COW</h3>
+                        <p>
+                            Cows come in different breeds and sizes, thus a price range depending on size and quantity.
+                            <td>
+                                <tr>COWS</tr>
+                                <td>Quantity</td>
+                            </td>
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div>
+                        <form id="cowform" onsubmit="return false">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h5>Weight</h5>
+                                    <select class="form-control" name="weightcow" id="weightcow">
+                          <option value="0">Select Weight</option>
+                                <option   value="200-250" >200-250</option> 
+                                <option   value="251-300" >251-300</option> 
+                                <option   value="301-350" >301-350</option> 
+                                <option   value="351-400" >351-400</option>
+                                <option   value="401-500" >401-500</option> 
+                        </select><br>
+                                </div>
+                                <div class="col-lg-3" id="retailPricecow">
+                                    <h5>Retail Price</h5>
+
+                                    <input class="form-control" disabled>
+
+                                    </input>
+                                    <div id="retailPricecow">
+
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <h5>Quantity</h5>
+                                    <select class="form-control" name="quantitycow" id="quantitycow">
+                       
+              
+                        </select>
+                                    <br>
+                                </div>
+                                <div class="col-lg-3" id="exploretablecow">
+                                    <h5>Total Price</h5>
+                                    <input class="form-control" disabled>
+                                    </input>
+
+                                </div>
+                                <div class="col-lg-12" align="center">
+                                    <center><button class="btn btn-primary">Add To Cart</button></center>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            </form>
+</body>
+
+<!--====== Javascripts & Jquery ======-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    for (var x = 1; x <= 1; x++) {
+        var sel = "<option   value=" + x + " >  " + x + " </option>";
+        $("#quantitycow,#quantitygoat,#quantityram").html(
+            $("#quantityco,#quantitygoat,#quantityram").html() + sel
+        )
+    }
+</script>
+<script src="js/farmsearch.js"></script>
+
+</html>
